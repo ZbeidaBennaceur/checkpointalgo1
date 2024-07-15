@@ -1,0 +1,43 @@
+ALGORITHM numberofcharacters
+VAR
+    phrase: STRING ;
+    i,n,result: INTEGER;
+BEGIN
+    n:=phrase.length
+    result:=0
+    FOR i FROM 0 TO n-1  DO
+        IF phrase[i]<>" " THEN result+=1
+        END IF
+    END_FOR
+    WRITE (result)
+END
+
+ALGORITHM numberofwords
+VAR
+    phrase: STRING ;
+    j,n,result: INTEGER;
+BEGIN
+    n:=phrase.length
+    result:=0
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        IF phrase[i]=" " THEN result+=1
+        END IF
+    END_FOR
+    WRITE (result+1)
+END
+
+ALGORITHM numberofvowels
+VAR
+    phrase: STRING ;
+    f,n,result: INTEGER;
+BEGIN
+    n:=phrase.length
+    result:=0
+    FOR f FROM 0 TO n-1 STEP 1  DO
+        IF phrase[f]="a" OR phrase[f]="e" OR phrase[f]="i" OR  phrase[f]="o"  OR  phrase[f]="u" OR  phrase[f]="y"  THEN result+=1
+        END IF
+    END_FOR
+    WRITE (result+1)
+END
+
+
