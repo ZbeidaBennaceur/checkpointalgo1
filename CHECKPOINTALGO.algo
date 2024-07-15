@@ -37,7 +37,7 @@ BEGIN
         IF phrase[f]="a" OR phrase[f]="e" OR phrase[f]="i" OR  phrase[f]="o"  OR  phrase[f]="u" OR  phrase[f]="y"  THEN result+=1
         END IF
     END_FOR
-    WRITE (result+1)
+    WRITE (result)
 END
 
 
